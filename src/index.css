@@ -44,6 +44,10 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-logic-dark text-foreground font-sans antialiased;
   }
@@ -88,6 +92,98 @@
   .blur-gradient {
     background: radial-gradient(circle at center, rgba(77, 168, 255, 0.15), transparent 70%);
     filter: blur(40px);
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 rounded-xl shadow-lg;
+  }
+  
+  .animate-float {
+    animation: floating 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-text {
+    animation: pulse-text 3s ease-in-out infinite;
+  }
+  
+  .textured-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes pulse-text {
+  0%, 100% {
+    filter: brightness(100%);
+    text-shadow: 0 0 10px rgba(77, 168, 255, 0.5);
+  }
+  50% {
+    filter: brightness(150%);
+    text-shadow: 0 0 20px rgba(77, 168, 255, 0.8);
+  }
+}
+
+.perspective-container {
+  perspective: 1000px;
+}
+
+.hover-3d {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.hover-3d:hover {
+  transform: rotateX(5deg) rotateY(5deg);
+}
+
+/* Gradient text animations */
+.gradient-text {
+  background: linear-gradient(90deg, #4da8ff, #8b5cf6, #10b981, #4da8ff);
+  background-size: 300% 100%;
+  animation: gradient-shift 8s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+/* Reveal animation */
+.reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f0f0f;
+  transform: translateX(0);
+  animation: reveal 1s 0.5s forwards;
+}
+
+@keyframes reveal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
 
