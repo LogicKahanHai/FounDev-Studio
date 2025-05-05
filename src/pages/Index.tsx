@@ -12,7 +12,10 @@ const Index = () => {
     <div className="min-h-screen bg-logic-dark text-white">
       <Navbar />
       <main className="relative">
-        <ThreeDElements />
+        {/* Conditionally render ThreeDElements to avoid errors */}
+        <div className="hidden md:block">
+          <ThreeDElements />
+        </div>
         <HeroSection />
         <ServicesSection />
         <TeamPreviewSection />

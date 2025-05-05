@@ -3,10 +3,21 @@ import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, RoundedBox, Sphere, Torus } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
+import { MeshStandardMaterial } from "three";
+import { BufferGeometry, Mesh, Euler, Vector3 } from "three";
+
+// Define the proper types for the AnimatedObject component
+interface AnimatedObjectProps {
+  position: [number, number, number];
+  color: string;
+  shape: React.ElementType;
+  args: any[];
+  rotation: [number, number, number];
+}
 
 // Animated 3D object component
-const AnimatedObject = ({ position, color, shape: Shape, args, rotation }) => {
-  const meshRef = useRef();
+const AnimatedObject = ({ position, color, shape: Shape, args, rotation }: AnimatedObjectProps) => {
+  const meshRef = useRef<Mesh<BufferGeometry, MeshStandardMaterial>>(null);
   
   useFrame((state) => {
     if (!meshRef.current) return;
@@ -40,7 +51,7 @@ const AnimatedObject = ({ position, color, shape: Shape, args, rotation }) => {
 // Camera controller that listens to mouse movement
 const CameraController = () => {
   const { camera, mouse } = useThree();
-  const initialCameraPosition = useRef([0, 0, 5]);
+  const initialCameraPosition = useRef<[number, number, number]>([0, 0, 5]);
   
   useFrame(() => {
     // Subtle camera movement based on mouse position
