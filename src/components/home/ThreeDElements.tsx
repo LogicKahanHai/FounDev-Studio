@@ -1,10 +1,9 @@
 
-import { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, RoundedBox, Sphere, Torus } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 import { MeshStandardMaterial, BufferGeometry, Mesh } from "three";
-import { useState, useEffect } from "react";
 
 // Define the proper types for the AnimatedObject component
 interface AnimatedObjectProps {
