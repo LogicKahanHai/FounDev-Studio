@@ -6,27 +6,27 @@ import { ChevronRight } from "lucide-react";
 const teamMembers = [
   {
     id: 1,
-    name: "Alex Chen",
-    role: "Lead Web Developer",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&q=80",
+    name: "Anubhav Jaiswal",
+    role: "Frontend Developer",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFI5u3AFMDjgw/profile-displayphoto-shrink_400_400/B56ZPy_BrtH0Ao-/0/1734948429925?e=1752105600&v=beta&t=T0A3rq8kquEBVGPNmSpq_PKspsZ4WeQ0owOQkcyhLuI",
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    role: "UI/UX Designer",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&q=80",
+    name: "Rishi Bhalla",
+    role: "Android Developer",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGxfbb8wcFH0g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1666335877782?e=1752105600&v=beta&t=1mr5zmPdOLfpY6aRR0bVJZuuO28uFOg5zXCGWdYcYtA",
   },
   {
     id: 3,
-    name: "David Rodriguez",
-    role: "Android Developer",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&q=80",
+    name: "Shashank Pandey",
+    role: "Backend Developer",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFEUIQTguyYGA/profile-displayphoto-shrink_400_400/B56ZUjYME1HsAg-/0/1740055299322?e=1752105600&v=beta&t=e1W5fCBgpwlPvaSfPpLJoJAxkMIEBJgQd02nLVLLiRY",
   },
   {
     id: 4,
-    name: "Emma Wilson",
-    role: "iOS Developer",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=300&fit=crop&q=80",
+    name: "Saksham Jaiswal",
+    role: "Web Developer",
+    image: "https://media.licdn.com/dms/image/v2/D4E35AQHK0A9GrkFPHw/profile-framedphoto-shrink_400_400/B4EZY6lewlGYAc-/0/1744739626239?e=1747062000&v=beta&t=nQ1ff34mVHsQAqi-bbaLxuWRGUBmUJmgbyNg2oDkTwQ",
   },
 ];
 
