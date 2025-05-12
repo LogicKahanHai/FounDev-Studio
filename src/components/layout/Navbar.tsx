@@ -32,9 +32,9 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-logic-blue to-logic-purple">
-                LOGIC
+                DEV
               </span>
-              <span className="ml-2 text-xl font-medium text-white">Warehouse</span>
+              <span className="ml-2 text-xl font-medium text-white">Solutions</span>
             </Link>
           </div>
           

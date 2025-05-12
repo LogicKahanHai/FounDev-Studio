@@ -110,8 +110,7 @@ const Contact = () => {
                       <div>
                         <h3 className="text-lg font-medium mb-1">Our Location</h3>
                         <p className="text-logic-gray-light">
-                          123 Tech Park, Innovation Street<br />
-                          Digital City, 12345
+                          Jalandhar, Punjab, India<br />
                         </p>
                       </div>
                     </div>
@@ -125,8 +124,7 @@ const Contact = () => {
                       <div>
                         <h3 className="text-lg font-medium mb-1">Email Us</h3>
                         <p className="text-logic-gray-light">
-                          contact@logicwarehouse.com<br />
-                          support@logicwarehouse.com
+                          anubhavjaiswal1803@gmail.com
                         </p>
                       </div>
                     </div>
@@ -140,8 +138,7 @@ const Contact = () => {
                       <div>
                         <h3 className="text-lg font-medium mb-1">Call Us</h3>
                         <p className="text-logic-gray-light">
-                          +1 (555) 123-4567<br />
-                          +1 (555) 987-6543
+                          +91 7980921124
                         </p>
                       </div>
                     </div>
@@ -324,8 +321,8 @@ const Contact = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <p className="text-logic-gray-light mb-4">Interactive map would be displayed here</p>
-                  <p className="font-medium">123 Tech Park, Innovation Street, Digital City, 12345</p>
+                  <p className="text-logic-gray-light mb-4"></p>
+                  <p className="font-medium">Jalndhar Punjab, India</p>
                 </div>
               </div>
             </div>

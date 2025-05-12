@@ -3,115 +3,86 @@ import { useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { GitBranch } from "lucide-react";
 
 // Team member data
 const teamMembers = [
   {
     id: 1,
-    name: "Alex Chen",
-    role: "Lead Web Developer",
-    bio: "Alex has over 8 years of experience in web development, specializing in React and modern JavaScript frameworks. He leads our web development team to create high-performance, responsive websites.",
-    skills: ["React", "TypeScript", "Node.js", "GraphQL", "AWS"],
-    category: "web",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&q=80",
+    name: "Anubhav Jaiswal",
+    role: "Android Developer",
+    bio: "Anubhav is a skilled Android developer with expertise in Kotlin, Java, and Jetpack Compose. He is passionate about building user-friendly mobile applications and delivering high-quality experiences.",
+    skills: ["Kotlin", "Java", "Android SDK", "Firebase", "Jetpack Compose"],
+    category: "android",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFI5u3AFMDjgw/profile-displayphoto-shrink_800_800/B56ZPy_BrtH0Ak-/0/1734948429837?e=1752710400&v=beta&t=Vk-7ii0n6eID-hYx-b8EsLrdQ7tV0UTC5GfayppdI9g",
     social: {
-      github: "#",
-      linkedin: "#",
-      twitter: "#"
+      github: "https://github.com/anubhavxdev",
+      linkedin: "https://www.linkedin.com/in/anubhavxdev/",
+      twitter: "https://x.com/Anubhavjai68749",
     }
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    role: "UI/UX Designer",
-    bio: "Sarah is a creative UI/UX designer with a passion for creating intuitive and beautiful user interfaces. She works closely with our development teams to ensure seamless user experiences across all platforms.",
-    skills: ["UI Design", "UX Research", "Figma", "Adobe XD", "Prototyping"],
-    category: "design",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&q=80",
+    name: "Shashank Pandey",
+    role: "Backend Developer",
+    bio: "Shashank is a backend developer with a strong focus on building scalable and efficient server-side applications. He is proficient in Node.js and Flask.",
+    skills: ["Node.js", "Flask", "Express", "MongoDB", "PostgreSQL"],
+    category: "web",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFEUIQTguyYGA/profile-displayphoto-shrink_800_800/B56ZUjYME1HsAc-/0/1740055299343?e=1752710400&v=beta&t=Rt6zWMRSH1acs0RBn9UG4FHsz8YEod2mw_gkpkZylts",
     social: {
-      github: "#",
-      linkedin: "#",
-      dribbble: "#"
+      github: "https://github.com/shashankpandey04",
+      linkedin: "https://www.linkedin.com/in/shashankpandey04/",
     }
   },
   {
     id: 3,
-    name: "David Rodriguez",
-    role: "Android Developer",
-    bio: "David is an expert Android developer with experience building robust mobile applications for various industries. He specializes in Kotlin and has published several successful apps on the Google Play Store.",
-    skills: ["Kotlin", "Java", "Android SDK", "Firebase", "Jetpack Compose"],
-    category: "android",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&q=80",
+    name: "Saksham Jaiswal",
+    role: "Frontend Developer",
+    bio: "Saksham is a frontend developer with a keen eye for design and user experience. He specializes in React and has a passion for creating interactive web applications.",
+    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Redux"],
+    category: "web",
+    image: "https://avatars.githubusercontent.com/u/176170295?v=4",
     social: {
-      github: "#",
-      linkedin: "#",
-      twitter: "#"
+      github: "https://github.com/Saksham-Jaiswal-2004",
+      linkedin: "https://www.linkedin.com/in/saksham-jaiswal-220637302/"
     }
   },
   {
     id: 4,
-    name: "Emma Wilson",
+    name: "Rishi Bhalla",
     role: "iOS Developer",
-    bio: "Emma specializes in iOS development using Swift and SwiftUI. With 5 years of experience, she has developed numerous successful iPhone and iPad applications with a focus on performance and user experience.",
+    bio: "Rishi is an iOS developer with a passion for creating seamless mobile experiences. He is skilled in Swift and SwiftUI, and enjoys working on innovative applications.",
     skills: ["Swift", "SwiftUI", "UIKit", "CoreData", "XCode"],
     category: "ios",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop&q=80",
+    image: "https://avatars.githubusercontent.com/u/90065566?v=4",
     social: {
-      github: "#",
-      linkedin: "#",
-      twitter: "#"
+      github: "https://github.com/LogicKahanHai",
+      linkedin: "https://www.linkedin.com/in/rishi-bhalla/"
     }
   },
-  {
-    id: 5,
-    name: "Michael Zhang",
-    role: "Full Stack Developer",
-    bio: "Michael is a versatile full-stack developer proficient in both frontend and backend technologies. He excels at building complete web solutions from database design to responsive user interfaces.",
-    skills: ["JavaScript", "Python", "Django", "React", "MongoDB"],
-    category: "web",
-    image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=400&h=400&fit=crop&q=80",
-    social: {
-      github: "#",
-      linkedin: "#"
-    }
-  },
+  // {
+  //   id: 5,
+  //   name: "Arjun Singh",
+  //   role: "Backend Developer",
+  //   bio: "Arjun is a backend developer with expertise in building scalable APIs and managing databases. He ensures the backend systems are efficient and secure.",
+  //   skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "Docker"],
+  //   category: "web",
+  //   image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=400&h=400&fit=crop&q=80",
+  //   social: {
+  //     github: "#",
+  //     linkedin: "#"
+  //   }
+  // },
   {
     id: 6,
-    name: "Olivia Taylor",
+    name: "Vedant Gaidhanne",
     role: "Project Manager",
-    bio: "Olivia ensures our projects run smoothly from concept to completion. With her background in both business and technology, she effectively bridges the gap between technical teams and client needs.",
-    skills: ["Project Management", "Agile", "Scrum", "Client Relations", "Resource Planning"],
+    bio: "Vedant is a project manager with a strong background in Agile methodologies. He excels at coordinating teams and ensuring projects are delivered on time and within scope.",
+    skills: ["Agile", "Scrum", "Team Management", "Client Communication", "Risk Management"],
     category: "management",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&q=80",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQFg23agDGqOSQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714443215504?e=1752710400&v=beta&t=DzkBRG-1clioctzOrCYoiT7UrUU8a1wA_KMC9dUbWKY",
     social: {
-      linkedin: "#",
-      twitter: "#"
-    }
-  },
-  {
-    id: 7,
-    name: "James Wilson",
-    role: "Android Developer",
-    bio: "James is passionate about creating seamless Android experiences. He specializes in complex app architecture and has expertise in integrating various APIs and services into mobile applications.",
-    skills: ["Kotlin", "Java", "Android SDK", "RESTful APIs", "Material Design"],
-    category: "android",
-    image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=400&h=400&fit=crop&q=80",
-    social: {
-      github: "#",
-      linkedin: "#"
-    }
-  },
-  {
-    id: 8,
-    name: "Sophia Lee",
-    role: "iOS Developer",
-    bio: "Sophia is an experienced iOS developer with a strong focus on creating elegant and efficient code. She excels at optimizing app performance and implementing complex features with clean architecture.",
-    skills: ["Swift", "Objective-C", "CoreAnimation", "ARKit", "Push Notifications"],
-    category: "ios",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&q=80",
-    social: {
-      github: "#",
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/vedantgaidhane/"
     }
   }
 ];

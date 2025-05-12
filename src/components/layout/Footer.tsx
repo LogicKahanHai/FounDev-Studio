@@ -12,9 +12,9 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center">
               <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-logic-blue to-logic-purple">
-                LOGIC
+                DEV
               </span>
-              <span className="ml-2 text-xl font-medium text-white">Warehouse</span>
+              <span className="ml-2 text-xl font-medium text-white">Solutions</span>
             </Link>
             <p className="mt-4 text-logic-gray-light max-w-xs">
               Transforming ideas into exceptional digital experiences with cutting-edge web and mobile solutions.
@@ -104,19 +104,19 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span className="text-logic-gray-light">123 Tech Park, Innovation Street, Digital City</span>
+                <span className="text-logic-gray-light">Jalandhar, Punjab</span>
               </li>
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-logic-blue mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span className="text-logic-gray-light">contact@logicwarehouse.com</span>
+                <span className="text-logic-gray-light">anubhavjaiswal1803@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <svg className="h-6 w-6 text-logic-blue mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="text-logic-gray-light">+1 (555) 123-4567</span>
+                <span className="text-logic-gray-light">+91 7980921124</span>
               </li>
             </ul>
           </div>
@@ -124,7 +124,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-logic-gray-light text-sm">
-            © {currentYear} LOGIC Warehouse. All rights reserved.
+            © {currentYear} DEV Solutions. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6 text-sm">

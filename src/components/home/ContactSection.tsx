@@ -78,7 +78,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="text-sm font-medium text-logic-gray-light mb-1">Our Location</h4>
-                      <p>123 Tech Park, Innovation Street, Digital City</p>
+                      <p>Jalandhar, Punjab</p>
                     </div>
                   </div>
                   
@@ -90,7 +90,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="text-sm font-medium text-logic-gray-light mb-1">Email Address</h4>
-                      <p>contact@logicwarehouse.com</p>
+                      <p>anubhavjaiswal1803@gmail.com</p>
                     </div>
                   </div>
                   
@@ -102,7 +102,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="text-sm font-medium text-logic-gray-light mb-1">Phone Number</h4>
-                      <p>+1 (555) 123-4567</p>
+                      <p>+91 7980921124</p>
                     </div>
                   </div>
                 </div>
