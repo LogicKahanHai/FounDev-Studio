@@ -148,17 +148,16 @@ const ServicesSection = () => {
                       "bg-logic-purple/10"
                     }`}>
                       <div className="flex items-center justify-center h-full">
-  <div className="w-full h-full border-2 border-logic-blue/30 rounded flex items-center justify-center">
-    {service.id === "websites" ? (
-      <img src="/alexacars.png" className="w-full h-full object-cover rounded" alt="Alexa Cars" />
-    ) : service.id === "android" ? (
-      <img src="/androidapp.jpg" className="w-full h-full object-cover rounded" alt="Android App" />
-    ) : (
-      <img src="/iosapp.png" className="w-full h-full object-cover rounded" alt="iOS App" />
-    )}
-  </div>
-</div>
-
+                        <div className="w-full h-full border-2 border-logic-blue/30 rounded flex items-center justify-center">
+                          {service.id === "websites" ? (
+                            <img src="/alexacars.png" className="w-full h-full object-cover rounded" alt="Alexa Cars" />
+                          ) : service.id === "android" ? (
+                            <img src="/androidapp.jpg" className="w-full h-full object-cover rounded" alt="Android App" />
+                          ) : (
+                            <img src="/iosapp.png" className="w-full h-full object-cover rounded" alt="iOS App" />
+                          )}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
