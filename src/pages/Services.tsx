@@ -7,19 +7,19 @@ import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-logic-dark text-white">
+    <div className="min-h-screen w-screen bg-logic-dark text-white overflow-hidden">
       <Navbar />
       
-      <main>
+      <main className="w-full">
         {/* Hero Section */}
-        <div className="pt-32 pb-20 relative">
+        <div className="pt-32 pb-20 relative w-full">
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-gradient animate-pulse-glow" />
             <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full blur-gradient animate-pulse-glow" style={{ animationDelay: "1s" }} />
           </div>
           
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center max-w-3xl mx-auto">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center w-full max-w-full">
+            <div className="text-center w-full mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
               <p className="text-xl text-logic-gray-light">
                 We offer a comprehensive suite of digital solutions to help your business thrive in the digital landscape.
@@ -29,11 +29,11 @@ const Services = () => {
         </div>
         
         {/* Services Section */}
-        <div className="py-16">
+        <div className="py-16 w-full">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Website Development */}
             <div className="mb-24">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="grid md:grid-cols-2 gap-12 items-center w-full">
                 <div className="order-2 md:order-1">
                   <div className="inline-flex items-center bg-logic-blue/20 text-logic-blue rounded-full px-4 py-1 text-sm font-medium mb-4">
                     Website Development
@@ -111,7 +111,8 @@ const Services = () => {
                 <div className="order-1 md:order-2">
                   <div className="rounded-lg p-1 bg-logic-blue/20">
                     <div className="aspect-video rounded-md overflow-hidden bg-logic-blue/10 flex items-center justify-center">
-                      <AppWindow className="h-20 w-20 text-logic-blue opacity-50" />
+                    <img src="/alexacars.png" className="w-full h-full object-cover" alt="Alexa Cars" />
+
                     </div>
                   </div>
                 </div>
@@ -120,11 +121,11 @@ const Services = () => {
             
             {/* Android App Development */}
             <div className="mb-24">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="grid md:grid-cols-2 gap-12 items-center w-full">
                 <div className="order-1">
                   <div className="rounded-lg p-1 bg-logic-green/20">
                     <div className="aspect-video rounded-md overflow-hidden bg-logic-green/10 flex items-center justify-center">
-                      <Smartphone className="h-20 w-20 text-logic-green opacity-50" />
+                    <img src="/androidapp.jpg" className="w-full h-full object-cover" alt="Android App" />
                     </div>
                   </div>
                 </div>
@@ -206,7 +207,7 @@ const Services = () => {
             
             {/* iOS App Development */}
             <div>
-              <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="grid md:grid-cols-2 gap-12 items-center w-full">
                 <div className="order-2 md:order-1">
                   <div className="inline-flex items-center bg-logic-purple/20 text-logic-purple rounded-full px-4 py-1 text-sm font-medium mb-4">
                     iOS App Development
@@ -283,7 +284,7 @@ const Services = () => {
                 <div className="order-1 md:order-2">
                   <div className="rounded-lg p-1 bg-logic-purple/20">
                     <div className="aspect-video rounded-md overflow-hidden bg-logic-purple/10 flex items-center justify-center">
-                      <Apple className="h-20 w-20 text-logic-purple opacity-50" />
+                    <img src="/iosapp.png" className="w-full h-full object-cover" alt="iOS App" />
                     </div>
                   </div>
                 </div>
