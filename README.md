@@ -4,7 +4,7 @@
 
 FounDev Studio is a professional digital agency website that showcases web and mobile application development services. The website features a modern, responsive design with interactive elements and smooth animations.
 
-![FounDev Studio](https://github.com/anubhavxdev/logic-warehouse/raw/main/public/logo.png)
+![FounDev Studio](https://github.com/anubhavxdev/FounDev-Studio/blob/main/public/foundev.png)
 
 ## Features
 
