@@ -1,17 +1,10 @@
 [build]
-  command = "npm install && npm run build"
+  command = "npm install && npm run netlify-build"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "16.14.0"
   NPM_VERSION = "8.5.0"
-
-# Specific build settings
-[context.production]
-  command = "npm install && npm run build"
-
-[context.deploy-preview]
-  command = "npm install && npm run build"
 
 # Handle 404 errors
 [[redirects]]
