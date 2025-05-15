@@ -7,13 +7,13 @@ const teamMembers = [
   {
     id: 1,
     name: "Anubhav Jaiswal",
-    role: "Frontend Developer",
+    role: "Android Developer",
     image: "https://media.licdn.com/dms/image/v2/D5603AQFI5u3AFMDjgw/profile-displayphoto-shrink_400_400/B56ZPy_BrtH0Ao-/0/1734948429925?e=1752105600&v=beta&t=T0A3rq8kquEBVGPNmSpq_PKspsZ4WeQ0owOQkcyhLuI",
   },
   {
     id: 2,
     name: "Rishi Bhalla",
-    role: "Android Developer",
+    role: "ios Developer",
     image: "https://media.licdn.com/dms/image/v2/D4D03AQGxfbb8wcFH0g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1666335877782?e=1752105600&v=beta&t=1mr5zmPdOLfpY6aRR0bVJZuuO28uFOg5zXCGWdYcYtA",
   },
   {
@@ -25,8 +25,8 @@ const teamMembers = [
   {
     id: 4,
     name: "Saksham Jaiswal",
-    role: "Web Developer",
-    image: "https://media.licdn.com/dms/image/v2/D4E35AQHK0A9GrkFPHw/profile-framedphoto-shrink_400_400/B4EZY6lewlGYAc-/0/1744739626239?e=1747062000&v=beta&t=nQ1ff34mVHsQAqi-bbaLxuWRGUBmUJmgbyNg2oDkTwQ",
+    role: "Frontend Developer",
+    image: "https://avatars.githubusercontent.com/u/176170295?v=4",
   },
 ];
 

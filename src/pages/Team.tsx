@@ -60,19 +60,19 @@ const teamMembers = [
       linkedin: "https://www.linkedin.com/in/rishi-bhalla/"
     }
   },
-  // {
-  //   id: 5,
-  //   name: "Arjun Singh",
-  //   role: "Backend Developer",
-  //   bio: "Arjun is a backend developer with expertise in building scalable APIs and managing databases. He ensures the backend systems are efficient and secure.",
-  //   skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "Docker"],
-  //   category: "web",
-  //   image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=400&h=400&fit=crop&q=80",
-  //   social: {
-  //     github: "#",
-  //     linkedin: "#"
-  //   }
-  // },
+  {
+    id: 5,
+    name: "Cahal Agarwalla",
+    role: "Managing Director",
+    bio: "Cahal is the managing director of Logic, overseeing all operations and strategic direction. With a background in software engineering, he ensures the company delivers top-notch solutions.",
+    skills: ["Leadership", "Strategic Planning", "Software Engineering", "Business Development", "Team Management"],
+    category: "management",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGw1tC5fsIBIg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699906938175?e=1752710400&v=beta&t=4hI-MaD9XV-GIlZYz4oEOvO596SX4hWWH96ZPPlpER0",
+    social: {
+      github: "https://github.com/CaHHaL",
+      linkedin: "https://www.linkedin.com/in/cahal-agarwalla/"
+    }
+  },
   {
     id: 6,
     name: "Vedant Gaidhanne",
