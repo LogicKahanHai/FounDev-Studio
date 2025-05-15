@@ -12,9 +12,9 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center">
               <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-logic-blue to-logic-purple">
-                DEV
+                FounDev
               </span>
-              <span className="ml-2 text-xl font-medium text-white">Solutions</span>
+              <span className="ml-2 text-xl font-medium text-white">Studio</span>
             </Link>
             <p className="mt-4 text-logic-gray-light max-w-xs">
               Transforming ideas into exceptional digital experiences with cutting-edge web and mobile solutions.
@@ -136,7 +136,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-logic-gray-light text-sm">
-            © {currentYear} DEV Solutions. All rights reserved.
+            © {currentYear} FounDev Studio. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6 text-sm">

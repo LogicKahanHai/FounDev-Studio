@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
     company: "TechVision Inc.",
     image: "/testimonials/sarah.jpg",
     rating: 5,
-    text: "DEV Solutions transformed our outdated platform into a modern, user-friendly website that has significantly increased our customer engagement. Their team was professional, responsive, and delivered beyond our expectations.",
+    text: "FounDev Studio transformed our outdated platform into a modern, user-friendly website that has significantly increased our customer engagement. Their team was professional, responsive, and delivered beyond our expectations.",
     featured: true
   },
   {
@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
     company: "GrowthLabs",
     image: "/testimonials/michael.jpg",
     rating: 5,
-    text: "Working with DEV Solutions on our mobile app was a game-changer for our startup. Their attention to detail and technical expertise helped us launch ahead of schedule. The user feedback has been overwhelmingly positive.",
+    text: "Working with FounDev Studio on our mobile app was a game-changer for our startup. Their attention to detail and technical expertise helped us launch ahead of schedule. The user feedback has been overwhelmingly positive.",
     featured: true
   },
   {
@@ -48,7 +48,7 @@ const testimonials: Testimonial[] = [
     company: "Elevate Media",
     image: "/testimonials/emily.jpg",
     rating: 5,
-    text: "The e-commerce solution developed by DEV Solutions increased our online sales by 40% in just three months. Their team understood our brand vision perfectly and created an intuitive shopping experience for our customers.",
+    text: "The e-commerce solution developed by FounDev Studio increased our online sales by 40% in just three months. Their team understood our brand vision perfectly and created an intuitive shopping experience for our customers.",
     featured: true
   },
   {
@@ -58,7 +58,7 @@ const testimonials: Testimonial[] = [
     company: "InnovateTech",
     image: "/testimonials/david.jpg",
     rating: 4,
-    text: "DEV Solutions provided excellent technical support during our digital transformation. Their developers are highly skilled and were able to integrate complex systems seamlessly. I highly recommend their services."
+    text: "FounDev Studio provided excellent technical support during our digital transformation. Their developers are highly skilled and were able to integrate complex systems seamlessly. I highly recommend their services."
   },
   {
     id: 5,
@@ -67,7 +67,7 @@ const testimonials: Testimonial[] = [
     company: "NextWave Solutions",
     image: "/testimonials/priya.jpg",
     rating: 5,
-    text: "The UI/UX design work from DEV Solutions completely revitalized our application. Their designers took the time to understand our users' needs and created an interface that's both beautiful and functional."
+    text: "The UI/UX design work from FounDev Studio completely revitalized our application. Their designers took the time to understand our users' needs and created an interface that's both beautiful and functional."
   },
   {
     id: 6,
@@ -76,7 +76,7 @@ const testimonials: Testimonial[] = [
     company: "Global Logistics",
     image: "/testimonials/james.jpg",
     rating: 5,
-    text: "DEV Solutions developed a custom logistics management system that has streamlined our operations and reduced processing time by 60%. Their team was collaborative and responsive throughout the entire project."
+    text: "FounDev Studio developed a custom logistics management system that has streamlined our operations and reduced processing time by 60%. Their team was collaborative and responsive throughout the entire project."
   },
   {
     id: 7,
@@ -85,7 +85,7 @@ const testimonials: Testimonial[] = [
     company: "StyleHouse",
     image: "/testimonials/sophia.jpg",
     rating: 4,
-    text: "Our online store redesign by DEV Solutions has received fantastic feedback from our customers. The checkout process is now seamless, and we've seen a significant reduction in cart abandonment rates."
+    text: "Our online store redesign by FounDev Studio has received fantastic feedback from our customers. The checkout process is now seamless, and we've seen a significant reduction in cart abandonment rates."
   },
   {
     id: 8,
@@ -94,7 +94,7 @@ const testimonials: Testimonial[] = [
     company: "HealthTech Solutions",
     image: "/testimonials/robert.jpg",
     rating: 5,
-    text: "DEV Solutions helped us develop a secure patient portal that complies with all healthcare regulations. Their expertise in both security and user experience was invaluable to our project's success."
+    text: "FounDev Studio helped us develop a secure patient portal that complies with all healthcare regulations. Their expertise in both security and user experience was invaluable to our project's success."
   }
 ];
 
@@ -155,7 +155,7 @@ const Testimonials = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Discover why businesses trust DEV Solutions for their digital transformation needs.
+              Discover why businesses trust FounDev Studio for their digital transformation needs.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
