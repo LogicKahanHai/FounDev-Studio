@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -102,6 +103,7 @@ const HeroSection = () => {
             variants={item}
             className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6"
           >
+            <Link to="/contact">
             <Button 
               size="lg" 
               className="group bg-logic-blue hover:bg-logic-blue/90 text-white text-lg px-8 py-6 shadow-lg shadow-logic-blue/20 hover:shadow-logic-blue/40 transition-all hover:scale-105"
@@ -109,6 +111,7 @@ const HeroSection = () => {
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
+            </Link>
             
             <Button 
               size="lg"

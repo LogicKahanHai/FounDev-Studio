@@ -122,6 +122,7 @@ const ServicesSection = () => {
                     ))}
                   </ul>
 
+                  <Link to="/services">
                   <Button
                     className={`group ${
                       service.id === "websites" ? "bg-logic-blue hover:bg-logic-blue/90" : 
@@ -132,6 +133,7 @@ const ServicesSection = () => {
                     Learn More
                     <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
+                  </Link>
                 </div>
 
                 <div className="order-1 md:order-2">

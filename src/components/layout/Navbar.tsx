@@ -55,9 +55,11 @@ const Navbar = () => {
             <Link to="/contact" className="text-white hover:text-logic-blue transition-colors">
               Contact
             </Link>
+            <Link to="/contact">
             <Button className="bg-logic-blue hover:bg-logic-blue/90 text-white">
               Get Started
             </Button>
+            </Link>
           </nav>
           
           {/* Mobile Menu Button */}
