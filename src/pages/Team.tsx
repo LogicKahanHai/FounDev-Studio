@@ -271,7 +271,7 @@ const Team = () => {
                     </li>
                   </ul>
                   <a 
-                    href="#" 
+                    href="/careers" 
                     className="inline-flex items-center bg-logic-blue hover:bg-logic-blue/90 text-white px-6 py-3 rounded-md font-medium transition-colors"
                   >
                     View Open Positions
@@ -285,17 +285,24 @@ const Team = () => {
                   <ul className="space-y-4">
                     <li className="border-b border-white/10 pb-4">
                       <div className="flex justify-between mb-1">
-                        <span className="font-medium">Senior React Developer</span>
+                        <span className="font-medium">Sales Executive</span>
                         <span className="text-logic-blue text-sm">Full-time</span>
                       </div>
-                      <p className="text-sm text-logic-gray-light">Help build modern web applications with React and TypeScript.</p>
+                      <p className="text-sm text-logic-gray-light">
+                        We are looking for a sales executive to generate new leads and build strong relationships with our customers.
+                        The ideal candidate will have a minimum of 1 year of experience in sales, excellent communication skills, and a proven track record of success in sales.
+                      </p>
                     </li>
                     <li className="border-b border-white/10 pb-4">
                       <div className="flex justify-between mb-1">
-                        <span className="font-medium">Android Developer</span>
+                        <span className="font-medium">Backend Developer</span>
                         <span className="text-logic-green text-sm">Full-time</span>
                       </div>
-                      <p className="text-sm text-logic-gray-light">Create innovative Android applications using Kotlin.</p>
+                      <p className="text-sm text-logic-gray-light">
+                        Create innovative server-side applications using Node.js, Express, and MongoDB. 
+                        This is an entry-level position and we are open to recent graduates or those looking to transition into a new field. 
+                        We will provide you with the training and support you need to grow as a developer.
+                      </p>
                     </li>
                     <li className="border-b border-white/10 pb-4">
                       <div className="flex justify-between mb-1">
