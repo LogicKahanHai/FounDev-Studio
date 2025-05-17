@@ -73,18 +73,18 @@ const teamMembers = [
       linkedin: "https://www.linkedin.com/in/cahal-agarwalla/"
     }
   },
-  {
-    id: 6,
-    name: "Vedant Gaidhanne",
-    role: "Project Manager",
-    bio: "Vedant is a project manager with a strong background in Agile methodologies. He excels at coordinating teams and ensuring projects are delivered on time and within scope.",
-    skills: ["Agile", "Scrum", "Team Management", "Client Communication", "Risk Management"],
-    category: "management",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQFg23agDGqOSQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714443215504?e=1752710400&v=beta&t=DzkBRG-1clioctzOrCYoiT7UrUU8a1wA_KMC9dUbWKY",
-    social: {
-      linkedin: "https://www.linkedin.com/in/vedantgaidhane/"
-    }
-  }
+  // {
+  //   id: 6,
+  //   name: "Vedant Gaidhanne",
+  //   role: "Project Manager",
+  //   bio: "Vedant is a project manager with a strong background in Agile methodologies. He excels at coordinating teams and ensuring projects are delivered on time and within scope.",
+  //   skills: ["Agile", "Scrum", "Team Management", "Client Communication", "Risk Management"],
+  //   category: "management",
+  //   image: "https://media.licdn.com/dms/image/v2/D4D03AQFg23agDGqOSQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714443215504?e=1752710400&v=beta&t=DzkBRG-1clioctzOrCYoiT7UrUU8a1wA_KMC9dUbWKY",
+  //   social: {
+  //     linkedin: "https://www.linkedin.com/in/vedantgaidhane/"
+  //   }
+  // }
 ];
 
 const Team = () => {
