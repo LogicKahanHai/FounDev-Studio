@@ -23,22 +23,22 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Pragati Sharma",
+    name: "D.K Naidu",
     position: "CEO",
-    company: "TechVision Inc.",
+    company: " Code Matrix Trading & Contracting (CMTC), Qatar",
     image: "/testimonials/sarah.jpg",
     rating: 5,
-    text: "FounDev Studio transformed our outdated platform into a modern, user-friendly website that has significantly increased our customer engagement. Their team was professional, responsive, and delivered beyond our expectations.",
+    text: "Partnering with FounDev Studio was a fantastic experience. Their team demonstrated exceptional professionalism, creativity, and technical expertise in building our company website. From design to deployment, everything was handled seamlessly and with great attention to detail. The final product perfectly reflects our brand and business goals. Highly impressed and would definitely recommend them to anyone looking for reliable digital solutions.",
     featured: true
   },
   {
     id: 2,
-    name: "Mintu Kumar",
+    name: "Mohit Somi",
     position: "Founder",
-    company: "GrowthLabs",
+    company: "Alexa Car, Jaipur",
     image: "/testimonials/michael.jpg",
     rating: 5,
-    text: "Working with FounDev Studio on our mobile app was a game-changer for our startup. Their attention to detail and technical expertise helped us launch ahead of schedule. The user feedback has been overwhelmingly positive.",
+    text: "Working with FounDev Studio was an absolute pleasure. They truly understood our vision and translated it into a sleek, user-friendly website that perfectly represents AlexaCar. The team was responsive, innovative, and delivered everything on time. We've already started seeing positive customer feedback. Highly recommended for any business looking to go digital!",
     featured: true
   },
   {
