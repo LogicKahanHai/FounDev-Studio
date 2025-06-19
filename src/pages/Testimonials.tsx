@@ -26,17 +26,17 @@ const testimonials: Testimonial[] = [
     name: "D.K Naidu",
     position: "CEO",
     company: " Code Matrix Trading & Contracting (CMTC), Qatar",
-    image: "/testimonials/sarah.jpg",
+    image: "/testimonials/DK.png",
     rating: 5,
     text: "Partnering with FounDev Studio was a fantastic experience. Their team demonstrated exceptional professionalism, creativity, and technical expertise in building our company website. From design to deployment, everything was handled seamlessly and with great attention to detail. The final product perfectly reflects our brand and business goals. Highly impressed and would definitely recommend them to anyone looking for reliable digital solutions.",
     featured: true
   },
   {
     id: 2,
-    name: "Mohit Somi",
+    name: "Mohit Soni",
     position: "Founder",
     company: "Alexa Car, Jaipur",
-    image: "/testimonials/michael.jpg",
+    image: "/testimonials/mohit.png",
     rating: 5,
     text: "Working with FounDev Studio was an absolute pleasure. They truly understood our vision and translated it into a sleek, user-friendly website that perfectly represents AlexaCar. The team was responsive, innovative, and delivered everything on time. We've already started seeing positive customer feedback. Highly recommended for any business looking to go digital!",
     featured: true

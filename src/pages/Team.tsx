@@ -60,8 +60,22 @@ const teamMembers = [
       linkedin: "https://www.linkedin.com/in/rishi-bhalla/"
     }
   },
-  {
-    id: 5,
+ 
+   {
+     id: 5,
+     name: "Gaurav Nayyar",
+     role: "UI/UX Designer",
+     bio: "Gaurav is a creative UI/UX designer who focuses on crafting intuitive and visually appealing user interfaces. He has a strong background in design principles and user research.",
+     skills: ["Figma", "Adobe XD", "Sketch", "User Research", "Wireframing", "Prototyping"],
+     category: "design",
+     image: "/team/gaurav.jpg",
+     social: {
+       linkedin: "https://www.linkedin.com/in/nayyar-gaurav/"
+     }
+   },
+
+    {
+    id: 6,
     name: "Cahal Agarwalla",
     role: "Managing Director",
     bio: "Cahal is the managing director of Logic, overseeing all operations and strategic direction. With a background in software engineering, he ensures the company delivers top-notch solutions.",
@@ -73,18 +87,7 @@ const teamMembers = [
       linkedin: "https://www.linkedin.com/in/cahal-agarwalla/"
     }
   },
-  // {
-  //   id: 6,
-  //   name: "Vedant Gaidhanne",
-  //   role: "Project Manager",
-  //   bio: "Vedant is a project manager with a strong background in Agile methodologies. He excels at coordinating teams and ensuring projects are delivered on time and within scope.",
-  //   skills: ["Agile", "Scrum", "Team Management", "Client Communication", "Risk Management"],
-  //   category: "management",
-  //   image: "https://media.licdn.com/dms/image/v2/D4D03AQFg23agDGqOSQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714443215504?e=1752710400&v=beta&t=DzkBRG-1clioctzOrCYoiT7UrUU8a1wA_KMC9dUbWKY",
-  //   social: {
-  //     linkedin: "https://www.linkedin.com/in/vedantgaidhane/"
-  //   }
-  // }
+
 ];
 
 const Team = () => {
