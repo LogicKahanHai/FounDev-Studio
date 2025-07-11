@@ -52,6 +52,9 @@ const Navbar = () => {
             <Link to="/testimonials" className="text-white hover:text-logic-blue transition-colors">
               Testimonials
             </Link>
+            <Link to="/portfolio" className="text-white hover:text-logic-blue transition-colors">
+              Portfolio
+            </Link>
             <Link to="/contact" className="text-white hover:text-logic-blue transition-colors">
               Contact
             </Link>
@@ -107,6 +110,13 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Testimonials
+            </Link>
+            <Link 
+              to="/portfolio"
+              className="block px-3 py-2 text-base font-medium text-white hover:bg-white/10 rounded-md"
+              onClick={toggleMenu}
+            >
+              Portfolio
             </Link>
             <Link 
               to="/contact"
