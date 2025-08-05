@@ -8,19 +8,19 @@ const teamMembers = [
     id: 1,
     name: "Anubhav Jaiswal",
     role: "Android Developer",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQFI5u3AFMDjgw/profile-displayphoto-shrink_400_400/B56ZPy_BrtH0Ao-/0/1734948429925?e=1752105600&v=beta&t=T0A3rq8kquEBVGPNmSpq_PKspsZ4WeQ0owOQkcyhLuI",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQGYCOMrO__HwQ/profile-displayphoto-scale_400_400/B56ZgndXj7HMAk-/0/1753008669066?e=1757548800&v=beta&t=4V_rziqvaqvxVtJ6RF6G1k8Cs6p7thmhL8iNXAHw0vo",
   },
   {
     id: 2,
     name: "Rishi Bhalla",
     role: "ios Developer",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQGxfbb8wcFH0g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1666335877782?e=1752105600&v=beta&t=1mr5zmPdOLfpY6aRR0bVJZuuO28uFOg5zXCGWdYcYtA",
+    image: "https://avatars.githubusercontent.com/u/90065566?v=4",
   },
   {
     id: 3,
     name: "Shashank Pandey",
     role: "Backend Developer",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQFEUIQTguyYGA/profile-displayphoto-shrink_400_400/B56ZUjYME1HsAg-/0/1740055299322?e=1752105600&v=beta&t=e1W5fCBgpwlPvaSfPpLJoJAxkMIEBJgQd02nLVLLiRY",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFEUIQTguyYGA/profile-displayphoto-shrink_400_400/B56ZUjYME1HsAg-/0/1740055299322?e=1757548800&v=beta&t=xMcY56As--88dmvxeTJr8uD6AraGJUiE-Ro1E1-95eY",
   },
   {
     id: 4,

@@ -14,7 +14,7 @@ const teamMembers = [
     bio: "Anubhav is a skilled Android developer with expertise in Kotlin, Java, and Jetpack Compose. He is passionate about building user-friendly mobile applications and delivering high-quality experiences.",
     skills: ["Kotlin", "Java", "Android SDK", "Firebase", "Jetpack Compose"],
     category: "android",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQFI5u3AFMDjgw/profile-displayphoto-shrink_800_800/B56ZPy_BrtH0Ak-/0/1734948429837?e=1752710400&v=beta&t=Vk-7ii0n6eID-hYx-b8EsLrdQ7tV0UTC5GfayppdI9g",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQGYCOMrO__HwQ/profile-displayphoto-scale_400_400/B56ZgndXj7HMAk-/0/1753008669066?e=1757548800&v=beta&t=4V_rziqvaqvxVtJ6RF6G1k8Cs6p7thmhL8iNXAHw0vo",
     social: {
       github: "https://github.com/anubhavxdev",
       linkedin: "https://www.linkedin.com/in/anubhavxdev/",
@@ -28,7 +28,7 @@ const teamMembers = [
     bio: "Shashank is a backend developer with a strong focus on building scalable and efficient server-side applications. He is proficient in Node.js and Flask.",
     skills: ["Node.js", "Flask", "Express", "MongoDB", "PostgreSQL"],
     category: "web",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQFEUIQTguyYGA/profile-displayphoto-shrink_800_800/B56ZUjYME1HsAc-/0/1740055299343?e=1752710400&v=beta&t=Rt6zWMRSH1acs0RBn9UG4FHsz8YEod2mw_gkpkZylts",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFEUIQTguyYGA/profile-displayphoto-shrink_400_400/B56ZUjYME1HsAg-/0/1740055299322?e=1757548800&v=beta&t=xMcY56As--88dmvxeTJr8uD6AraGJUiE-Ro1E1-95eY",
     social: {
       github: "https://github.com/shashankpandey04",
       linkedin: "https://www.linkedin.com/in/shashankpandey04/",
@@ -81,7 +81,7 @@ const teamMembers = [
     bio: "Cahal is the managing director of Logic, overseeing all operations and strategic direction. With a background in software engineering, he ensures the company delivers top-notch solutions.",
     skills: ["Leadership", "Strategic Planning", "Software Engineering", "Business Development", "Team Management"],
     category: "management",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQGw1tC5fsIBIg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699906938175?e=1752710400&v=beta&t=4hI-MaD9XV-GIlZYz4oEOvO596SX4hWWH96ZPPlpER0",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGw1tC5fsIBIg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699906938175?e=1757548800&v=beta&t=oqR-_tWM3ZPPEPdi3YzLrS369tIeWcDWmzcNFpw90E8",
     social: {
       github: "https://github.com/CaHHaL",
       linkedin: "https://www.linkedin.com/in/cahal-agarwalla/"
