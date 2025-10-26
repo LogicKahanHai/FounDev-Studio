@@ -6,8 +6,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-logic-dark-light pt-16 pb-8">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 xl:px-10 lg:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center">
@@ -41,13 +41,13 @@ const Footer = () => {
 
               <a href="https://www.linkedin.com/company/foundevstudio/" className="text-logic-gray-light hover:text-logic-blue transition-colors">
                 <span className="sr-only">LinkedIn</span>
-                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path fillRule="evenodd" d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" clipRule="evenodd" />
                 </svg>
               </a>
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
@@ -79,7 +79,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Services */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
@@ -106,7 +106,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Contact */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
@@ -133,9 +133,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-logic-gray-light text-sm">
+          <p className="text-logic-gray-light text-sm lg:text-xs">
             © {currentYear} FounDev Studio. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
