@@ -37,7 +37,7 @@ export const TeamMembers: TeamMember[] = [
     bio: "Shashank is a backend developer with a strong focus on building scalable and efficient server-side applications. He is proficient in Node.js and Flask.",
     skills: ["Node.js", "Flask", "Express", "MongoDB", "PostgreSQL"],
     category: "web",
-    image: "/team/shashank.jpeg",
+    image: "/team/shashank.jpg",
     social: {
       github: "https://github.com/shashankpandey04",
       linkedin: "https://www.linkedin.com/in/shashankpandey04/",
