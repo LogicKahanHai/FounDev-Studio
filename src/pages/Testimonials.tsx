@@ -102,15 +102,15 @@ const Testimonials = () => {
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
   const featuredTestimonials = testimonials.filter(t => t.featured);
-  
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === featuredTestimonials.length - 1 ? 0 : prev + 1));
   };
-  
+
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev === 0 ? featuredTestimonials.length - 1 : prev - 1));
   };
-  
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -121,7 +121,7 @@ const Testimonials = () => {
       }
     }
   };
-  
+
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -136,12 +136,12 @@ const Testimonials = () => {
   return (
     <div className="min-h-screen bg-logic-dark flex flex-col">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-b from-logic-dark to-logic-dark-light">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <motion.h1 
+            <motion.h1
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -149,7 +149,7 @@ const Testimonials = () => {
             >
               What Our <span className="bg-clip-text text-transparent bg-gradient-to-r from-logic-blue to-logic-purple">Clients</span> Say
             </motion.h1>
-            <motion.p 
+            <motion.p
               className="text-lg text-logic-gray-light mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -162,7 +162,7 @@ const Testimonials = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <Button 
+              <Button
                 onClick={() => navigate("/contact")}
                 className="bg-logic-blue hover:bg-logic-blue/90 text-white"
               >
@@ -172,7 +172,7 @@ const Testimonials = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Featured Testimonials Carousel */}
       <section className="py-16 bg-logic-dark-light">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -180,17 +180,17 @@ const Testimonials = () => {
             <div className="flex justify-between items-center mb-8">
               <h2 className="text-2xl md:text-3xl font-bold text-white">Featured Testimonials</h2>
               <div className="flex space-x-2">
-                <Button 
-                  variant="outline" 
-                  size="icon" 
+                <Button
+                  variant="outline"
+                  size="icon"
                   onClick={prevSlide}
                   className="border-logic-gray-light text-logic-gray-light hover:text-white hover:border-white"
                 >
                   <ChevronLeft size={20} />
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="icon" 
+                <Button
+                  variant="outline"
+                  size="icon"
                   onClick={nextSlide}
                   className="border-logic-gray-light text-logic-gray-light hover:text-white hover:border-white"
                 >
@@ -198,14 +198,14 @@ const Testimonials = () => {
                 </Button>
               </div>
             </div>
-            
-            <div className="relative h-[400px] md:h-[300px] overflow-hidden rounded-xl bg-logic-dark p-8">
+
+            <div className="relative md:min-h-[890px] lg:min-h-[690px] xl:min-h-[590px] 2xl:h-[400px] overflow-hidden rounded-xl bg-logic-dark p-8">
               {featuredTestimonials.map((testimonial, index) => (
                 <motion.div
                   key={testimonial.id}
                   className="absolute inset-0 p-8 flex flex-col justify-center"
                   initial={{ opacity: 0, x: 100 }}
-                  animate={{ 
+                  animate={{
                     opacity: currentSlide === index ? 1 : 0,
                     x: currentSlide === index ? 0 : 100,
                     zIndex: currentSlide === index ? 10 : 0
@@ -231,9 +231,9 @@ const Testimonials = () => {
                     </div>
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
-                        <Star 
-                          key={i} 
-                          className={`w-5 h-5 ${i < testimonial.rating ? 'text-logic-blue fill-logic-blue' : 'text-logic-gray-light'}`} 
+                        <Star
+                          key={i}
+                          className={`w-5 h-5 ${i < testimonial.rating ? 'text-logic-blue fill-logic-blue' : 'text-logic-gray-light'}`}
                         />
                       ))}
                     </div>
@@ -241,15 +241,14 @@ const Testimonials = () => {
                 </motion.div>
               ))}
             </div>
-            
+
             <div className="flex justify-center mt-4 space-x-2">
               {featuredTestimonials.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-3 h-3 rounded-full ${
-                    currentSlide === index ? 'bg-logic-blue' : 'bg-logic-gray-light/30'
-                  }`}
+                  className={`w-3 h-3 rounded-full ${currentSlide === index ? 'bg-logic-blue' : 'bg-logic-gray-light/30'
+                    }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
@@ -257,15 +256,15 @@ const Testimonials = () => {
           </div>
         </div>
       </section>
-      
+
       {/* All Testimonials Grid */}
       <section className="py-16 bg-logic-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 text-center">
             All Client Testimonials
           </h2>
-          
-          <motion.div 
+
+          <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             variants={containerVariants}
             initial="hidden"
@@ -295,9 +294,9 @@ const Testimonials = () => {
                   </div>
                   <div className="flex">
                     {[...Array(5)].map((_, i) => (
-                      <Star 
-                        key={i} 
-                        className={`w-4 h-4 ${i < testimonial.rating ? 'text-logic-blue fill-logic-blue' : 'text-logic-gray-light'}`} 
+                      <Star
+                        key={i}
+                        className={`w-4 h-4 ${i < testimonial.rating ? 'text-logic-blue fill-logic-blue' : 'text-logic-gray-light'}`}
                       />
                     ))}
                   </div>
@@ -308,7 +307,7 @@ const Testimonials = () => {
           </motion.div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-logic-dark-light to-logic-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -321,13 +320,13 @@ const Testimonials = () => {
                 Let's discuss how we can help transform your digital presence and deliver exceptional results for your business.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button 
+                <Button
                   onClick={() => navigate("/contact")}
                   className="bg-logic-blue hover:bg-logic-blue/90 text-white"
                 >
                   Contact Us
                 </Button>
-                <Button 
+                <Button
                   onClick={() => navigate("/services")}
                   variant="outline"
                   className="border-logic-gray-light text-white hover:bg-white/5"
@@ -339,7 +338,7 @@ const Testimonials = () => {
           </div>
         </div>
       </section>
-      
+
       <Footer />
     </div>
   );
