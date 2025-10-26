@@ -1,36 +1,12 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import { TeamPreviewMembers } from "@/lib/constants";
 
-const teamMembers = [
-  {
-    id: 1,
-    name: "Anubhav Jaiswal",
-    role: "Android Developer",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQGYCOMrO__HwQ/profile-displayphoto-scale_400_400/B56ZgndXj7HMAk-/0/1753008669066?e=1757548800&v=beta&t=4V_rziqvaqvxVtJ6RF6G1k8Cs6p7thmhL8iNXAHw0vo",
-  },
-  {
-    id: 2,
-    name: "Rishi Bhalla",
-    role: "ios Developer",
-    image: "https://avatars.githubusercontent.com/u/90065566?v=4",
-  },
-  {
-    id: 3,
-    name: "Shashank Pandey",
-    role: "Backend Developer",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQFEUIQTguyYGA/profile-displayphoto-shrink_400_400/B56ZUjYME1HsAg-/0/1740055299322?e=1757548800&v=beta&t=xMcY56As--88dmvxeTJr8uD6AraGJUiE-Ro1E1-95eY",
-  },
-  {
-    id: 4,
-    name: "Saksham Jaiswal",
-    role: "Frontend Developer",
-    image: "https://avatars.githubusercontent.com/u/176170295?v=4",
-  },
-];
+
 
 const TeamPreviewSection = () => {
+  const teamMembers = TeamPreviewMembers;
   return (
     <div className="py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,19 +17,19 @@ const TeamPreviewSection = () => {
             Our talented developers and designers are passionate about creating exceptional digital experiences.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member) => (
-            <div 
-              key={member.id} 
+            <div
+              key={member.id}
               className="group relative overflow-hidden bg-logic-dark-light rounded-lg p-6 transition-transform hover:-translate-y-2 duration-300 border border-white/5 hover:border-logic-blue/20"
             >
               <div className="absolute inset-0 bg-gradient-to-t from-logic-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="flex flex-col items-center">
                 <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-logic-blue/20 group-hover:border-logic-blue transition-colors duration-300">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
+                  <img
+                    src={member.image}
+                    alt={member.name}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
@@ -75,10 +51,10 @@ const TeamPreviewSection = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-16 text-center">
           <Link to="/team">
-            <Button 
+            <Button
               className="bg-logic-blue hover:bg-logic-blue/90 text-white"
             >
               View Full Team

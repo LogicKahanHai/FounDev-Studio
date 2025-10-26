@@ -1,106 +1,25 @@
-
 import { useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { GitBranch } from "lucide-react";
+import { TeamMembers } from "@/lib/constants";
 
 // Team member data
-const teamMembers = [
-  {
-    id: 1,
-    name: "Anubhav Jaiswal",
-    role: "Android Developer",
-    bio: "Anubhav is a skilled Android developer with expertise in Kotlin, Java, and Jetpack Compose. He is passionate about building user-friendly mobile applications and delivering high-quality experiences.",
-    skills: ["Kotlin", "Java", "Android SDK", "Firebase", "Jetpack Compose"],
-    category: "android",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQGYCOMrO__HwQ/profile-displayphoto-scale_400_400/B56ZgndXj7HMAk-/0/1753008669066?e=1757548800&v=beta&t=4V_rziqvaqvxVtJ6RF6G1k8Cs6p7thmhL8iNXAHw0vo",
-    social: {
-      github: "https://github.com/anubhavxdev",
-      linkedin: "https://www.linkedin.com/in/anubhavxdev/",
-      twitter: "https://x.com/Anubhavjai68749",
-    }
-  },
-  {
-    id: 2,
-    name: "Shashank Pandey",
-    role: "Backend Developer",
-    bio: "Shashank is a backend developer with a strong focus on building scalable and efficient server-side applications. He is proficient in Node.js and Flask.",
-    skills: ["Node.js", "Flask", "Express", "MongoDB", "PostgreSQL"],
-    category: "web",
-    image: "https://media.licdn.com/dms/image/v2/D5603AQFEUIQTguyYGA/profile-displayphoto-shrink_400_400/B56ZUjYME1HsAg-/0/1740055299322?e=1757548800&v=beta&t=xMcY56As--88dmvxeTJr8uD6AraGJUiE-Ro1E1-95eY",
-    social: {
-      github: "https://github.com/shashankpandey04",
-      linkedin: "https://www.linkedin.com/in/shashankpandey04/",
-    }
-  },
-  {
-    id: 3,
-    name: "Saksham Jaiswal",
-    role: "Frontend Developer",
-    bio: "Saksham is a frontend developer with a keen eye for design and user experience. He specializes in React and has a passion for creating interactive web applications.",
-    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Redux"],
-    category: "web",
-    image: "https://avatars.githubusercontent.com/u/176170295?v=4",
-    social: {
-      github: "https://github.com/Saksham-Jaiswal-2004",
-      linkedin: "https://www.linkedin.com/in/saksham-jaiswal-220637302/"
-    }
-  },
-  {
-    id: 4,
-    name: "Rishi Bhalla",
-    role: "iOS Developer",
-    bio: "Rishi is an iOS developer with a passion for creating seamless mobile experiences. He is skilled in Swift and SwiftUI, and enjoys working on innovative applications.",
-    skills: ["Swift", "SwiftUI", "UIKit", "CoreData", "XCode"],
-    category: "ios",
-    image: "https://avatars.githubusercontent.com/u/90065566?v=4",
-    social: {
-      github: "https://github.com/LogicKahanHai",
-      linkedin: "https://www.linkedin.com/in/rishi-bhalla/"
-    }
-  },
- 
-   {
-     id: 5,
-     name: "Gaurav Nayyar",
-     role: "UI/UX Designer",
-     bio: "Gaurav is a creative UI/UX designer who focuses on crafting intuitive and visually appealing user interfaces. He has a strong background in design principles and user research.",
-     skills: ["Figma", "Adobe XD", "Sketch", "User Research", "Wireframing", "Prototyping"],
-     category: "design",
-     image: "/team/gaurav.jpg",
-     social: {
-       linkedin: "https://www.linkedin.com/in/nayyar-gaurav/"
-     }
-   },
 
-    {
-    id: 6,
-    name: "Cahal Agarwalla",
-    role: "Managing Director",
-    bio: "Cahal is the managing director of Logic, overseeing all operations and strategic direction. With a background in software engineering, he ensures the company delivers top-notch solutions.",
-    skills: ["Leadership", "Strategic Planning", "Software Engineering", "Business Development", "Team Management"],
-    category: "management",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQGw1tC5fsIBIg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699906938175?e=1757548800&v=beta&t=oqR-_tWM3ZPPEPdi3YzLrS369tIeWcDWmzcNFpw90E8",
-    social: {
-      github: "https://github.com/CaHHaL",
-      linkedin: "https://www.linkedin.com/in/cahal-agarwalla/"
-    }
-  },
-
-];
 
 const Team = () => {
   const [filter, setFilter] = useState("all");
-  
-  const filteredMembers = filter === "all" 
-    ? teamMembers 
+
+  const teamMembers = TeamMembers
+
+  const filteredMembers = filter === "all"
+    ? teamMembers
     : teamMembers.filter(member => member.category === filter);
-  
+
   return (
     <div className="min-h-screen bg-logic-dark text-white">
       <Navbar />
-      
+
       <main>
         {/* Hero Section */}
         <div className="pt-32 pb-20 relative">
@@ -108,18 +27,18 @@ const Team = () => {
             <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-gradient animate-pulse-glow" />
             <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full blur-gradient animate-pulse-glow" style={{ animationDelay: "1s" }} />
           </div>
-          
+
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Meet Our Team</h1>
               <p className="text-xl text-logic-gray-light">
-                Our talented team of developers and designers are passionate about creating exceptional digital experiences 
+                Our talented team of developers and designers are passionate about creating exceptional digital experiences
                 that transform ideas into reality.
               </p>
             </div>
           </div>
         </div>
-        
+
         {/* Team Members */}
         <div className="py-16 bg-logic-dark-light">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -146,44 +65,43 @@ const Team = () => {
                   </TabsTrigger>
                 </TabsList>
               </div>
-              
+
               <TabsContent value={filter} className="mt-0 focus-visible:outline-none focus-visible:ring-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                   {filteredMembers.map((member) => (
-                    <div 
-                      key={member.id} 
+                    <div
+                      key={member.id}
                       className="bg-logic-dark border border-white/10 rounded-lg overflow-hidden transition-transform hover:-translate-y-2 duration-300 hover:shadow-lg hover:shadow-logic-blue/10"
                     >
                       <div className="aspect-square overflow-hidden">
-                        <img 
-                          src={member.image} 
+                        <img
+                          src={member.image}
                           alt={member.name}
                           className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                         />
                       </div>
-                      
+
                       <div className="p-6">
-                        <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 ${
-                          member.category === "web" ? "bg-logic-blue/20 text-logic-blue" :
+                        <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 ${member.category === "web" ? "bg-logic-blue/20 text-logic-blue" :
                           member.category === "android" ? "bg-logic-green/20 text-logic-green" :
-                          member.category === "ios" ? "bg-logic-purple/20 text-logic-purple" :
-                          member.category === "design" ? "bg-logic-pink/20 text-logic-pink" :
-                          "bg-logic-orange/20 text-logic-orange"
-                        }`}>
+                            member.category === "ios" ? "bg-logic-purple/20 text-logic-purple" :
+                              member.category === "design" ? "bg-logic-pink/20 text-logic-pink" :
+                                "bg-logic-orange/20 text-logic-orange"
+                          }`}>
                           {member.category.charAt(0).toUpperCase() + member.category.slice(1)}
                         </div>
-                        
+
                         <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
                         <p className="text-logic-gray-light mb-4">{member.role}</p>
-                        
+
                         <p className="text-sm text-logic-gray-light mb-4 line-clamp-3">
                           {member.bio}
                         </p>
-                        
+
                         <div className="flex flex-wrap gap-2 mb-4">
                           {member.skills.slice(0, 3).map((skill, index) => (
-                            <span 
-                              key={index} 
+                            <span
+                              key={index}
                               className="bg-white/5 text-xs px-2 py-1 rounded"
                             >
                               {skill}
@@ -195,7 +113,7 @@ const Team = () => {
                             </span>
                           )}
                         </div>
-                        
+
                         <div className="flex space-x-3">
                           {member.social.github && (
                             <a href={member.social.github} className="text-logic-gray-light hover:text-logic-blue transition-colors">
@@ -234,7 +152,7 @@ const Team = () => {
             </Tabs>
           </div>
         </div>
-        
+
         {/* Join Our Team */}
         <div className="py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -243,8 +161,8 @@ const Team = () => {
                 <div>
                   <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
                   <p className="text-logic-gray-light mb-6">
-                    We're always looking for talented individuals to join our growing team. 
-                    If you're passionate about technology and want to work on exciting projects, 
+                    We're always looking for talented individuals to join our growing team.
+                    If you're passionate about technology and want to work on exciting projects,
                     we'd love to hear from you.
                   </p>
                   <ul className="space-y-3 mb-8">
@@ -273,8 +191,8 @@ const Team = () => {
                       <span>Work on challenging projects</span>
                     </li>
                   </ul>
-                  <a 
-                    href="/careers" 
+                  <a
+                    href="/careers"
                     className="inline-flex items-center bg-logic-blue hover:bg-logic-blue/90 text-white px-6 py-3 rounded-md font-medium transition-colors"
                   >
                     View Open Positions
@@ -302,8 +220,8 @@ const Team = () => {
                         <span className="text-logic-green text-sm">Full-time</span>
                       </div>
                       <p className="text-sm text-logic-gray-light">
-                        Create innovative server-side applications using Node.js, Express, and MongoDB. 
-                        This is an entry-level position and we are open to recent graduates or those looking to transition into a new field. 
+                        Create innovative server-side applications using Node.js, Express, and MongoDB.
+                        This is an entry-level position and we are open to recent graduates or those looking to transition into a new field.
                         We will provide you with the training and support you need to grow as a developer.
                       </p>
                     </li>
@@ -328,7 +246,7 @@ const Team = () => {
           </div>
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );
